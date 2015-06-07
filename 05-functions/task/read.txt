@@ -1,0 +1,7 @@
+Будем говорить про области видимости, замыкания.
+
+Домой почитать
+http://learn.javascript.ru/global-object
+http://learn.javascript.ru/closures
+http://learn.javascript.ru/closures-usage
+http://habrahabr.ru/post/240349/

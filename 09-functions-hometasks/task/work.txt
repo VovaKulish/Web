@@ -1,0 +1,4 @@
+http://jscourse.com/task/to-matrix
+http://jscourse.com/task/pick
+
+И на засыпку: http://jscourse.com/task/flattern

@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+  td { font-size: 150%; cursor: pointer; border: 1px solid black; text-align:center; }
+  </style>
+  <script>
+  function delegate(elem, eventName, selectorFunc, handler) {
+    // ваш код
+  }
+  </script>
+</head>
+<body>
+
+<table>
+  <tr><td>1</td><td>2</td><td>3</td></tr>
+  <tr><!-- уделите особое внимание правильности работы с вложенной ячейкой 5
+       цвет должен меняться на всем тексте в TD  -->
+    <td>4</td><td>(<b><i>5</i></b>)</td><td>6</td>
+  </tr>
+  <tr><td>7</td><td>8</td><td>9</td></tr>
+</table>
+
+<script>
+var table = document.getElementsByTagName('table')[0];
+
+delegate(table, 'click',
+  function(elem) { return elem.tagName == 'TD'; },
+  function(e) { this.style.color = this.style.color ? '' : 'red' }
+);
+
+</script>
+
+</body>
+</html>

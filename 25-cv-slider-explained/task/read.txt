@@ -1,0 +1,7 @@
+Домой почитать про deferred и prmise (что почти одно и то же)
+http://habrahabr.ru/company/bankrot-pro/blog/230441/
+http://www.html5rocks.com/en/tutorials/es6/promises/
+
+А так же про медиатор
+http://addyosmani.com/largescalejavascript/#mediatorpattern
+http://arguments.callee.info/2009/05/18/javascript-design-patterns--mediator/

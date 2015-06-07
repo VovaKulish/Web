@@ -1,0 +1,39 @@
+img {
+	cursor: pointer;
+}
+
+.darkBack.enable{
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50); 
+	-moz-opacity: 0.5; 
+	-khtml-opacity: 0.5; 
+	opacity: 0.5; 
+}
+
+.largeImg {
+	position: fixed;
+	top: 10%;
+	left: 30%;
+	z-index: 30;
+}
+
+.largeImg img {
+	z-index: 20;
+}
+
+.close.enable{
+	height: 32px;
+	width: 32px;
+	background: url(back.png);
+	position: absolute;
+	top: 0px;
+	right: 50%;
+	z-index: 20;
+	cursor: pointer;
+}

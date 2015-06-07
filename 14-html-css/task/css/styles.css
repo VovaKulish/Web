@@ -1,0 +1,534 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body {
+	min-width: 1120px;
+}
+
+.main {
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+.layout {
+	margin: 0 150px;
+	overflow: hidden;
+}
+
+.top {
+	background: #484848;
+	min-height: 40px;
+	}
+
+.top .layout .left-column {
+	float: left;
+	margin-top: 11px;
+	}
+.top .layout .left-column ul {
+	list-style-type: none;
+}
+.top .layout .left-column ul li {
+	display: inline-block;
+	margin-right: 16px;
+}
+
+.top .layout .left-column ul li a {
+	text-decoration: none;
+	color: #919191;
+	font-size: 11px;
+	font-family: "Arial";
+	text-transform: uppercase;
+}
+
+.top .layout .right-column {
+	float: right;
+	margin-top: 9px;
+	margin-bottom: 8px;
+}
+
+.top .layout .right-column label {
+	margin-top: 5px;
+	color: #919191;
+	font-size: 11px;
+	font-family: "Arial";
+	text-transform: uppercase;
+	margin-right: 5px;
+}
+
+.top .layout .right-column input[type="text"],
+.top .layout .right-column input[type="password"] {
+	width: 100px;
+	height: 23px;
+	background: #373737;
+	border-left: 1px solid #2c2c2c;
+	border-top: 1px solid #2c2c2c;
+	border-right: 1px solid #515151;
+	border-bottom: 1px solid #515151;
+	border-radius: 4px;
+	padding: 7px 5px;
+	font-size: 10px;
+	font-family: "Arial";
+	color: #666666;
+	vertical-align: middle;
+		}
+
+::-webkit-input-placeholder { 
+	color: #666666;
+}
+
+:-moz-placeholder { 
+	color: #666666;
+}
+
+::-moz-placeholder {
+	color: #666666;
+}
+
+:-ms-input-placeholder {
+	color: #666666;
+}
+
+		.top .layout .right-column input[type="submit"] {
+			box-sizing: border-box;
+			width: 35px;
+			height: 23px;
+			border: none;
+			border-top: 1px solid #f27c7c;
+			border-bottom: 1px solid #343331;
+			border-radius: 4px;
+			background: #ec4444;
+			color: #fffffd;
+			vertical-align: middle;
+			font-size: 12px;
+			font-family: "Arial";
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+
+.header-logo img {
+	margin: 16px 0;
+	height: 48px;
+	width: 209px;
+	float: left;
+}
+
+.nav-bottom {
+	background: #e0e0e0;
+	min-height: 40px;
+	border-radius: 2px;
+}
+
+.nav-bottom .menu {
+	list-style-type: none;
+	float: left;
+}
+	.nav-bottom .menu li {
+		height: 40px;
+		float: left;
+		border-right: 1px solid #ededed;
+		box-sizing: border-box;
+	}
+
+	.nav-bottom .menu li:first-child {
+		border-left: none;
+	}
+
+		.nav-bottom .menu li a {
+			display: block;
+			text-decoration: none;
+			font-family: "Arial";
+			font-size: 12px;
+			padding: 0px 15px;
+			border-right: 1px solid #d3d3d3;
+			color: #474747;
+			text-transform: uppercase;
+			line-height: 40px;
+		}
+
+.nav-bottom .search {
+	float: right;
+	padding-top: 6px;
+	padding-right: 3px;
+	position: relative;
+}
+	.nav-bottom .search input[type="text"] {
+		box-sizing: border-box;
+		height: 29px;
+		min-width: 226px;
+		background-color: #484848;
+		border-top: 1px solid #2b2b2b;
+		border-right: 1px solid #ececec;
+		border-bottom: 1px solid #ececec;
+		border-left: 1px solid #2b2b2b;
+		border-radius: 3px;
+		padding-left: 9px;
+		padding-right: 28px;
+		color: #888888;
+		font-family: "Arial";
+	}
+
+	.nav-bottom .search input[type="text"]::-webkit-input-placeholder {
+		color: #888888;
+	}
+
+	.nav-bottom .search input[type="text"]:-moz-placeholder { 
+		color: #888888;
+	}
+
+	.nav-bottom .search input[type="text"]::-moz-placeholder { 
+		color: #888888;
+	}
+
+	.nav-bottom .search input[type="text"]:-ms-input-placeholder { 
+		color: #888888;
+	}
+
+	.nav-bottom .search input[type="image"] {
+		position: absolute;
+		top: 12px;
+		right: 10px;
+	}
+
+
+.banner-section {
+	border-bottom: 1px dashed #cecece;
+	margin-top: 68px;
+}
+	
+	.banner-text {
+		padding: 0 10px;
+	}
+
+		.banner-text ul {
+			margin-left: 17px;
+			margin-top: 10px;
+		}
+			
+			.banner-text ul li:before {
+				color: #44a7ec;
+				content: "●";
+				padding-right: 12px;
+			}
+
+			.banner-text ul li {
+				font-size: 16px;
+				line-height: 20px;
+				color: #999999;
+				font-family: "Trebuchet MS";
+			}
+		.banner-text img {
+			margin-top: 40px;
+			margin-bottom: 68px;
+		}
+
+	.banner-section .img {
+		height: 300px;
+		width: 450px;
+		float: right;
+		
+		background: url('../images/banner-image.png');
+	}
+
+		.banner-section .img img {
+			position: absolute;
+			right: 5px;
+		}
+
+	.banner-text h1 {
+		color: #ec4444;
+		font-size: 80px;
+		font-family: "Trebuchet MS";
+	}
+
+
+
+.products-section {
+	border-bottom: 1px dashed #cecece;
+}
+
+	.products-section h2 {
+		color: #484848;
+		font-family: "Trebuchet MS";
+		font-size: 50px;
+		line-height: 86px;
+		margin-bottom: 11px;
+		margin-left: 11px;
+	}
+
+	.products-section .products-list {
+		margin-left: 11px;
+		margin-bottom: 52px;
+	}
+
+			.products-section .products-list ul:after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+
+			.products-section .products-list ul li {
+				box-sizing: border-box;
+				float: left;
+				width: 25%;
+				padding-right: 17px;
+			}
+
+			.products-section .products-list ul li:last-child {
+				margin-right: 0;
+			}
+
+				.products-section .products-list ul li .product-image {
+					float: right;
+				}
+
+					.products-section .products-list ul li .product-image img {
+						position: relative;
+						top: 5px;
+						left: 7px;
+						margin-bottom: 10px;
+					}
+
+				.products-section .products-list ul li .products-description {
+					padding-left: 8px
+				}
+
+					.products-section .products-list ul li .products-description h3 {
+						font-size: 20px;
+						line-height: 22px;
+						font-family: "Trebuchet MS";
+						color: #44a7ec;
+					}
+
+					.products-section .products-list ul li .products-description p {
+						font-size: 11px;
+						line-height: 16px;
+						font-family: "Arial";
+						color: #999999;
+						margin-top: 16px;
+					}
+
+.blog-section {
+	border-bottom: 1px dashed #cecece;
+}
+	.blog-section h2 {
+		color: #484848;
+		font-family: "Trebuchet MS";
+		font-size: 50px;
+		line-height: 86px;
+		margin-bottom: 14px;
+		margin-left: 11px;
+	}
+
+	.blog-section .blog-articles {
+		overflow: hidden;
+		margin-bottom: 38px;
+	}
+
+		.blog-section .blog-articles .column-wrapper {
+			box-sizing: border-box;
+			width: 50%;
+			float: left;
+		}
+
+			.blog-section .blog-articles .column {
+				margin-left: 11px;
+				margin-right: 9px;
+			}
+				.blog-section .blog-articles .column h3 a {
+					text-decoration: none;
+					font-family: "Trebuchet MS";
+					font-size: 24px;
+					line-height: 26px;
+					color: #44a7ec;
+				}
+
+				.blog-section .blog-articles .column .date-and-author {
+					font-size: 12px;
+					font-family: "Arial";
+					line-height: 26px;
+					color: #aeaeae;
+					margin-top: 5px;
+				}
+
+					.blog-section .blog-articles .column .date-and-author a {
+						font-size: 12px;
+						font-family: "Arial";
+						line-height: 26px;
+						color: #44a7ec;
+					}
+
+				.blog-section .blog-articles .column .article-image {
+					width: 100%;
+					height: 141px;
+					background-repeat: no-repeat;
+					background-size: 100% 100%;
+					margin-top: 10px;
+				}
+
+					.blog-section .blog-articles .column .blog-image1 {
+						background-image: url('../images/blog-image1.png');
+					}
+
+					.blog-section .blog-articles .column .blog-image2 {
+						background-image: url('../images/blog-image2.png');
+					}
+
+				.blog-section .blog-articles .column .article-text {
+					color: #999999;
+					font-size: 12px;
+					font-family: "Arial";
+					line-height: 18px;
+					margin-top: 8px;
+				}
+
+.about-section .layout {
+	padding: 37px 0 34px 0;
+}
+
+	.about-section .layout .about {
+		float: left;
+		width: 50%;
+		padding: 0 10px;
+		box-sizing: border-box;
+	}
+
+		.about-section .layout .about h2 {
+			color: #484848;
+			font-family: "Trebuchet MS";
+			font-size: 50px;
+			line-height: 86px;
+			margin-bottom: 13px;
+		}
+
+		.about-section .layout .about p {
+			color: #999999;
+			font-family: "Arial";
+			font-size: 12px;
+			line-height: 18px;
+		}
+
+		.about-section .layout .about a {
+			display: inline-block;
+			margin-top: 33px;
+			color: #44a7ec;
+			font-family: "Arial";
+			font-size: 12px;
+			line-height: 18px;
+		}
+
+
+	.about-section .layout .right-column {
+		float: left;
+		width: 50%;
+		padding: 0 10px;
+		box-sizing: border-box;
+	}
+
+		.about-section .layout .right-column h2 {
+			color: #484848;
+			font-family: "Trebuchet MS";
+			font-size: 50px;
+			line-height: 86px;
+			margin-bottom: 13px;
+		}
+
+		.about-section .layout .right-column ul {
+			list-style: none;
+		}
+
+			.about-section .layout .right-column ul li a {
+				font-size: 10px;
+				line-height: 18px;
+				color: #44a7ec;
+				font-family: "Tahoma";
+				display: block;
+			}
+
+			.about-section .layout .right-column ul li p {
+				color: #999999;
+				font-family: "Arial";
+				font-size: 12px;
+				line-height: 18px;
+				margin-bottom: 10px;
+			}
+
+footer {
+	background-color: #484848;
+	padding-top: 20px;
+	padding-bottom: 16px;
+}
+footer .layout p {
+	float: left;
+	margin-top: 10px;
+}
+footer .layout p,
+footer .layout p a {
+	color: #999999;
+	font-family: "Tahoma";
+	font-size: 12px;
+}
+footer .layout ul {
+	float: right;
+	height: 33px;
+}
+footer .layout ul li {
+	float: left;
+	margin-right: 10px;
+	margin-left: 8px;
+}
+footer .layout ul li:first-child {
+	margin-left: 0;
+}
+footer .layout ul li a {
+	display: block;
+	width: 33px;
+	height: 33px;
+			}

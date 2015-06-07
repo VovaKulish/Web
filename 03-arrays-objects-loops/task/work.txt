@@ -1,0 +1,7 @@
+Под каждую задачу создать .js файл, и положить в папку `task`. Складывать только те файлы, которые прошли проверку на странице задачи.
+
+http://jscourse.com/task/summ-numbers-by-condition
+http://jscourse.com/task/extract-odd-items
+http://jscourse.com/task/contains
+http://jscourse.com/task/extend-object-simple
+http://jscourse.com/task/create-object-from-arrays

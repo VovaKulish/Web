@@ -1,0 +1,5 @@
+Создать класс car на прототипах. Добавить и использовать вспомогательный метод getRealDistance(speed) внутри метода drive. Взять за основу файл с вебинара.
+
+http://jscourse.com/task/compose
+http://jscourse.com/task/simple-templater
+http://jscourse.com/task/keeper

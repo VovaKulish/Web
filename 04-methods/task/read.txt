@@ -1,0 +1,13 @@
+Домой почитать, выполнить задания с сайта learn.javascript.ru
+
+About functions
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#Predefined_functions
+
+Про функции
+http://learn.javascript.ru/function-is-value
+http://learn.javascript.ru/function-declaration-expression
+http://learn.javascript.ru/arguments-pseudoarray
+http://learn.javascript.ru/arguments-named
+
+Продвинутое чтение
+http://dmitrysoshnikov.com/ecmascript/ru-chapter-5-functions/

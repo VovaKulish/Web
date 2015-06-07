@@ -1,0 +1,13 @@
+Хорошее описание величин http://habrahabr.ru/post/240223/. Затрагивает тему операторов, тем не менее стоит прочитать.
+
+Выражения и операторы
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators
+
+Значения и типы
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Values,_variables,_and_literals#Values
+http://learn.javascript.ru/types-intro
+
+Переменные
+http://learn.javascript.ru/variables
+http://learn.javascript.ru/variable-names
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Values,_variables,_and_literals#Variables

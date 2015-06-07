@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Click once</title>
+	<script>
+		document.documentElement.addEventListener('click', function clickedOnce() {
+			console.warn('THIS CLICK WAS PERFormeD ONLY INCE');
+			document.documentElement.removeEventListener('click', clickedOnce, false);
+		})
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

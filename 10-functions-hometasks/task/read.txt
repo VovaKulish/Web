@@ -1,0 +1,7 @@
+Сдай все домашки, которые еще не сданы (файл надо поместить в папку task соответствующей темы). В 9 00 субботы я заберу все твои файлы из дропбокса.
+
+В субботу начинаем новую большую тему: DOM
+http://habrahabr.ru/post/243311/
+http://learn.javascript.ru/browser-environment
+http://learn.javascript.ru/browser-objects
+http://learn.javascript.ru/dom-console

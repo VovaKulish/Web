@@ -1,0 +1,452 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@font-face {
+  font-family: 'BebasNeue';
+    src: url('BebasNeue.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+font-family: 'MyriadPro-Regular';
+	src: url('MyriadPro-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+font-family: 'MyriadPro-Semibold';
+	src: url('MyriadPro-Semibold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+font-family: 'Verdana-bold';
+	src: url('Verdana-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	height: 500px;
+}
+
+body {
+	background: url(../img/pattern.png);
+	width: 990px;
+	color: #8c8c8c;
+	margin: 0 auto;
+}
+
+ ul {
+ 	font-family: Verdana;
+ 	padding-left: 30px;
+    list-style-image: url(../img/circle.png);
+    font-size: 12px;
+    line-height: 1.75;
+   }
+
+.header {
+	width: 100%;
+	margin-top: 30px;
+	height: 100px;
+}
+/* header */
+div div {
+	display: inline-block;
+}
+
+
+
+.left-header, .right-header{
+	float: left;
+	width: 30%;
+}
+.left-header a, .right-header a {
+	text-decoration: none;
+}
+.name {
+	font-family: Verdana;
+	text-transform: uppercase;
+	color: #d14343;
+	font-size: 12px;
+}
+
+.port {
+	display: block;
+	text-transform: uppercase;
+	font-family: 'BebasNeue', sans-serif;
+	font-size: 50px;
+	color: #8c8c8c;
+	height: 46px;
+	width: 218px;
+}
+.right-header {
+	text-transform: uppercase;
+	font-family: 'BebasNeue', sans-serif;
+	font-size: 22px;
+	margin-top: 30px;
+}
+
+.central-header {
+	float: left;
+	width: 40%;
+}
+
+
+.left-header a:hover .port {
+	border-bottom: 0;
+	border-bottom: 4px solid #8c8c8c;
+}
+
+.right-header a {
+	color: #bebebe;
+}
+
+.text-content {
+	margin: 35px 0px 100px 0px;
+	width: 100%;
+	text-align: center;
+}
+.active {
+	margin-left: 21px;
+	padding: 0 5px;
+	border-bottom: 2px solid #8c8c8c;
+}
+.line a:hover {
+	color :#8c8c8c;
+}
+
+.active a {
+	color :#8c8c8c;
+}
+
+.line {
+	margin-left: 15px;
+	padding: 0 5px;
+}
+
+.line:hover {
+	border-bottom: 2px solid #8c8c8c;
+}
+
+.hello {
+	text-align: center;
+	font-family: 'MyriadPro-Semibold', sans-serif;
+	text-transform: uppercase;
+	font-size: 60px;
+}
+.look {
+	font-family: 'MyriadPro-Regular', sans-serif;
+	font-size: 60px;
+}
+
+.redtext {
+	text-transform: uppercase;
+	font-family: 'BebasNeue', sans-serif;
+	color: #d14343;
+	font-size: 40px;
+	padding: 10px;
+}
+
+.aboutme {
+	display: block;
+	float: left;
+	width: 50%;
+}
+
+.aboutme img {
+	float: left;
+	margin: 20px 20px 20px 0px;
+    padding: 10px;
+}
+
+.border {
+	display: block;
+	width: 95%;
+	border-bottom: 4px solid #dfdedc;
+	width: 477px;
+}
+
+.grayline {
+	display: block;	
+	width: 100%;
+	border-bottom: 4px solid #dfdedc;
+	width: 973px;
+}
+
+.textabout {
+	font-family: Verdana;
+	float: left;
+	width: 300px;
+	font-size: 13px;
+	margin-top: 25px;
+
+}
+
+.head {
+	display: block;
+	font-family: 'BebasNeue', sans-serif;
+	text-transform: uppercase;
+	font-size: 25px;
+	padding: 15px 0px 5px 10px;
+}
+
+.skills {
+	float: left;
+	width: 50%;
+}
+
+.web {
+	float: left;
+	width: 47%;
+	margin: 0px 5px 16px 0px;
+}
+
+.graphicdesign {
+	float: left;
+	width: 47%;
+	margin: 0px 10px 16px 5px;
+}
+.work {
+	display: block;
+	float: left;
+	width: 100%;
+}
+.workblock {
+	font-family: Verdana;
+	text-transform: uppercase;
+	margin-top: 24px;
+	float: right;
+	font-size: 11px;
+	padding-right: 3px;
+}
+
+
+.workblock a {
+	padding-left: 7px;
+	text-decoration: none;
+}
+.workblocks a {
+	color :#8c8c8c;
+}
+
+.workblocks a:hover {
+	color :#dc6565;
+}
+
+.activework a {
+	color :#dc6565;
+}
+
+.works
+{	
+	padding: 15px 30px 0px 0px;
+	width: 215px;
+	text-align: center;
+}
+
+.works span
+{	
+	display: block;
+	padding-top: 10px;
+ }
+
+.lastworks 
+{
+	width: 215px;
+	text-align: center;
+}
+
+.lastworks span {
+	display: block;
+	padding-top: 10px;
+}
+.gallery {
+	font-family: Verdana;
+	font-size: 12px;
+}
+
+.works img, .lastworks img {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.contact {
+	margin-top: 60px;
+	float: left;
+	width: 100%;
+}
+
+.leftcontact, .rightcontact {
+	float: left;
+	width: 50%;
+}
+
+.yname, .ymessage {
+	display: block;
+	padding: 15px 0px 5px 10px;
+}
+.ymail {
+	display: block;
+	padding: 15px 0px 5px 60px;
+}
+
+.textbox1 {
+	padding-left: 10px;
+}
+
+.textbox2 {
+	padding-left: 60px;
+}
+
+.inputname, .inputmail {
+	width: 127%;
+	height: 25px;
+	background-color: #e8e8e8;
+}
+
+.inputmessage {
+	padding-left: 10px;
+	width: 244%;
+	height: 110px;
+	background-color: #e8e8e8;
+}
+
+.button {
+	display: block;
+	padding-left: 10px;
+	padding-top: 20px;
+	
+}
+
+.send {
+	font-family: 'BebasNeue', sans-serif;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-size: 24px;
+	background-color: #cf6f6f;
+	border: solid 2px #bb6767;
+	width: 100px;
+   	height: 36px;
+}
+
+.rightcontact {
+	width: 50%;
+}
+
+.rightcontact img {
+	float: left;
+    padding: 10px;
+}
+
+.map {
+	display: block;
+	width: 45%;
+}
+
+.addphmail {
+	font-family:'Verdana-bold';
+	float: left;
+	font-size: 12px;
+	margin-left: 25px;
+}
+
+.info {
+	font-family: Verdana;
+	float: left;
+	font-size: 11px;
+	margin-left: 28px;
+}
+
+.other, .phonemail {
+	padding-top: 10px;
+	line-height: 18px;
+}
+
+.rightcontact a {
+	font-size: 11px;
+	color: #dc6565;
+}
+
+.footer {
+	width: 100%;
+	margin: 40px 0px 60px 0px;
+
+}
+
+.footer a {
+	font-family: Verdana;
+	font-size: 11px;
+	color: #dc6565;
+}
+
+.copyright {
+	margin-top: 10px;
+}
+
+.copy {
+	font-family: Verdana;
+	font-size: 11px;
+	margin-left: 10px;
+}
+
+.othercopy {
+	font-family: Verdana;
+	font-size: 11px;
+}
+
+.socials {
+	float: right;
+	padding: 10px 15px 0px 0px;
+}
+
+.socials a {
+	padding: 0px 15px 0px 0px;
+}

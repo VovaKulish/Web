@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mouse events example</title>
+	<style type="text/css">
+		.outer {
+			padding: 1em;
+			background: yellow;
+		}
+
+		.inner {
+			padding: 1em;
+			background: red;
+		}
+
+		.text {
+			background: #fff;
+		}
+
+		.bar {
+			width: 10px;
+			height: 200px;
+			background: magenta;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+		}
+	</style>
+	<script>
+		document.documentElement.addEventListener('click', function (event) {
+			if (event.target.nodeName === 'A') {
+				event.preventDefault();
+				console.log('link clicked!');
+			}
+		}, true);
+	</script>
+</head>
+<body>
+	<div class="outer">
+		<div class="inner">
+			<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, eius, dignissimos molestiae consequatur sapiente ipsam sit quae voluptates rem tempore necessitatibus beatae nesciunt ipsa quasi saepe corrupti neque delectus nostrum.</div>
+		</div>
+		<a href="http://google.com">google</a>
+		<a href="http://yandex.ru">yandex</a>
+	</div>
+	<!-- <div class="bar"></div> -->
+	<script>
+		var outer = document.querySelector('.outer');
+		var inner = document.querySelector('.inner');
+		var text = document.querySelector('.text');
+
+		function log(event) {
+			console.log(this, event)
+		}
+
+		// text.addEventListener('click', function () {
+		// 	var link = document.createElement('a');
+		// 	link.href = '#';
+		// 	link.innerText = 'Lorem';
+		// 	this.parentNode.appendChild(link)
+		// }, true);
+
+		// outer.addEventListener('click', function (event) {
+		// 	log.apply(this, arguments)
+		// 	// event.stopPropagation();
+		// }, true);
+		// text.addEventListener('click', log, true);
+		// inner.addEventListener('click', log, true);
+
+		// document.addEventListener('click', function (event) {
+		// 	console.log(this)
+		// }, false);
+
+		// document.body.addEventListener('click', function bodyClickHandler() {
+		// 	document.body.removeEventListener('click', bodyClickHandler, false);
+		// 	console.info('Single time body click')
+		// }, false);
+
+
+		// document.querySelector('.bar').addEventListener('mousemove', function () {
+		// 	console.warn('Move moved over bar!!!');
+		// }, false);
+	</script>
+</body>
+</html>

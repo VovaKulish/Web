@@ -1,0 +1,18 @@
+http://jscourse.com/task/array-like-object-to-array
+http://jscourse.com/task/query-string-to-object
+http://jscourse.com/task/fix-object-in-sequence
+http://jscourse.com/task/get-unique
+http://jscourse.com/task/incapsulated-counter
+
+
+Методы массивов, принимающие аргументом функцию (хорошо потренировать их на пройденных домашних заданиях. Под ссылкой - задание, где можно отработать применение метода)
+https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+	http://jscourse.com/task/extract-odd-items
+	+indexOf http://jscourse.com/task/get-unique
+
+https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+	http://jscourse.com/task/exec-each-function-in-array
+
+https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+	http://jscourse.com/task/create-object-from-arrays
+	http://jscourse.com/task/summ-numbers-by-condition

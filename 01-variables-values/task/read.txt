@@ -1,0 +1,25 @@
+Будем говорить про операторы (побитовые пропускаем), приведение типов, сравнение, ветвление
+
+Операторы
+Пропустить побитовые, выполнить для себя задания, обсудить задания на форуме.
+http://learn.javascript.ru/operators
+
+Операторы:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators
+
+Порядок операторов:
+https://developer.mozilla.org/ru/docs/JavaScript/Reference/Operators/Operator_Precedence
+
+Приведение типов
+http://learn.javascript.ru/types-conversion
+
+Логические операторы и сравнение
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators
+http://learn.javascript.ru/logical-ops
+http://learn.javascript.ru/comparison
+
+if-else
+http://learn.javascript.ru/ifelse
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
+http://learn.javascript.ru/ifelse

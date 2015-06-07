@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        span:hover {
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<!--Обернул все строки в спаны, что бы они были инлайновыми и клик ловился только непосредственно на надписи -->
+<ul class="tree">
+    <li><span>Животные</span>
+        <ul>
+            <li><span>Млекопитающие</span>
+                <ul>
+                    <li><span>Коровы</span></li>
+                    <li><span>Ослы</span></li>
+                    <li><span>Собаки</span></li>
+                    <li><span>Тигры</span></li>
+                </ul>
+            </li>
+            <li><span>Другие</span>
+                <ul>
+                    <li><span>Змеи</span></li>
+                    <li><span>Птицы</span></li>
+                    <li><span>Ящерицы</span></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><span>Рыбы</span>
+        <ul>
+            <li><span>Аквариумные</span>
+                <ul>
+                    <li><span>Гуппи</span></li>
+                    <li><span>Скалярии</span></li>
+                </ul>
+
+            </li>
+            <li><span>Морские</span>
+                <ul>
+                    <li><span>Морская форель</span></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+<script>
+    'use strict';
+    function addEvent(obj, event_name, handler) {
+        var handler_wrapper = function(event) {
+            event = event || window.event;
+            if (!event.target && event.srcElement) {
+                event.target = event.srcElement;
+            }
+            return handler.call(obj, event);
+        };
+
+        if (obj.addEventListener) {
+            obj.addEventListener(event_name, handler_wrapper, false);
+        } else if (obj.attachEvent) {
+            obj.attachEvent('on' + event_name, handler_wrapper);
+        }
+        return handler_wrapper;
+    } 
+
+    function delevent(obj, e, h) {
+        if (obj.removeEventListener) {
+            obj.removeEventListener(e, h, false);
+        } else if (obj.detachEvent) {
+            obj.detachEvent('on'+e, h);
+        } else {
+            obj['on'+e]=null;
+        }
+    }
+
+
+    var tree = document.querySelector('.tree');
+
+    function hideChildren(event) {
+        var event = event || window.event;
+        var target = event.target || event.srcElement;
+
+        if(target.tagName !== 'SPAN') return;
+
+        var node = target.parentNode.getElementsByTagName('ul')[0];
+        if(!node) return;
+
+        //проверяем атрибут, если нет, то добавляем "none" и наоборот
+        if(node.style.display === '') {
+            node.style.display = 'none';
+        } else {
+            node.style.display = '';
+        }
+    }
+
+    addEvent(tree, 'click', hideChildren)
+    //не выделяемые узлы
+    //нашел в учебнике у Кантора
+    tree.onselectstart = function(event) {
+        event = event || window.event
+        if (event.preventDefault) { 
+            event.preventDefault();
+        } else {
+            event.returnValue = false;
+        }
+    }
+    tree.onmousedown = function(event) {
+        event = event || window.event
+        if (event.preventDefault) { 
+            event.preventDefault();
+        } else {
+            event.returnValue = false;
+        }
+    }
+
+</script>
+</body>
+</html>

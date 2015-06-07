@@ -1,0 +1,6 @@
+Выполнить:
+http://jscourse.com/task/summ-all-arguments
+http://jscourse.com/task/is-in-array
+http://jscourse.com/task/every
+http://jscourse.com/task/exec-each-function-in-array
+http://jscourse.com/task/get-name-from-path

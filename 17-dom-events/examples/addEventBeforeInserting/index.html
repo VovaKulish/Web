@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Add handler before node inserted</title>
+</head>
+<body>
+	<script>
+	'use strict';
+
+	(function () {
+		var button = document.createElement('button');
+		button.innerText = 'Click me button';
+		button.addEventListener('click', function () {
+			alert('button clicked');
+		});
+
+		document.documentElement.addEventListener('click', function globalClick() {
+			console.log('ADD BUTTON!111')
+			document.documentElement.removeEventListener('click', globalClick, false);
+			document.body.appendChild(button);
+		}, false)
+	})();
+	</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Change node value</title>
+</head>
+<body>
+	<h1>Total people viewing this: <span class="total-people">0</span></h1>
+	<script>
+		var counter = (function () {
+			var totalNode = document.querySelector('.total-people');
+			function getNumValue (node) {
+				return parseInt(node.innerText) || 0;
+			}
+			return {
+				inc: function (num) {
+					totalNode.innerText = getNumValue(totalNode) + num;
+				},
+				dec: function (num) {
+					totalNode.innerText = getNumValue(totalNode) - num;
+				},
+				set: function (newVal) {
+					totalNode.innerText = newVal;
+				}
+			}
+		}());
+	</script>
+</body>
+</html>

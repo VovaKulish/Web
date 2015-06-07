@@ -1,0 +1,3 @@
+http://learn.javascript.ru/native-prototypes
+http://learn.javascript.ru/inheritance-intro
+http://habrahabr.ru/post/241587/

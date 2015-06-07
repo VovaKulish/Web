@@ -1,0 +1,6 @@
+http://www.howtocreate.co.uk/tutorials/javascript/domstructure
+
+http://learn.javascript.ru/dom-nodes
+http://learn.javascript.ru/traversing-dom
+http://learn.javascript.ru/basic-dom-node-properties
+http://learn.javascript.ru/modifying-document

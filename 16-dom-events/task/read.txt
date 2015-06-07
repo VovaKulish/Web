@@ -1,0 +1,4 @@
+http://learn.javascript.ru/introduction-browser-events
+http://learn.javascript.ru/bubbling-and-capturing
+http://learn.javascript.ru/default-browser-action
+http://learn.javascript.ru/mouse-event

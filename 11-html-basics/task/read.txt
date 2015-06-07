@@ -1,0 +1,13 @@
+http://htmlbook.ru/samhtml/struktura-html-koda
+http://htmlbook.ru/samhtml/znacheniya-atributov-tegov
+http://htmlbook.ru/samhtml/ssylki
+http://htmlbook.ru/samhtml/izobrazheniya
+http://htmlbook.ru/samhtml/spiski/markirovannyy-spisok
+http://htmlbook.ru/samhtml/spiski/spisok-opredeleniy
+
+http://htmlbook.ru/samcss/preimushchestva-stiley
+http://htmlbook.ru/samcss/bazovyy-sintaksis-css
+http://htmlbook.ru/samcss/znacheniya-stilevykh-svoystv
+
+Не смотрите, что статья старая. Умозаключения актуальны по сей день
+http://softwaremaniacs.org/blog/2005/06/08/juice-and-flies/

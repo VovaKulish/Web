@@ -1,0 +1,10 @@
+Введение в ajax
+http://learn.javascript.ru/ajax-xmlhttprequest
+http://learn.javascript.ru/ajax-intro#что-такое-ajax
+
+Работа с ajax с точки зрения jquery
+http://habrahabr.ru/post/42426/
+
+Поиграться с post-get-put-delete запросами можно на тестовом сервере https://hidden-brook-8135.herokuapp.com. Учтите, что изменения будут доступны всем, кто играется с этим сервером.
+
+Я ожидаю вопросов, потому что тема требудет понимания не только javascript, но и смежных вопросов (работа сервера, HTTP протокола)

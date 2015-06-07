@@ -1,0 +1,13 @@
+Будем говорить про массивы, объекты, циклы
+
+Объекты:
+http://learn.javascript.ru/object
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects (дальше Using a constructor function не надо читать)
+
+Массивы:
+http://learn.javascript.ru/array
+http://learn.javascript.ru/array-methods
+
+Циклы:
+http://learn.javascript.ru/while-for
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Statements#Loop_Statements (label не обязательно понимать, используется не так часто)

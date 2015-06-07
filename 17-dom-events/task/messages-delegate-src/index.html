@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="messages.css">
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+<div id="messages-container">
+  <div class="pane">
+    <h3>Лошадь</h3>
+    <p>Домашняя лошадь — животное семейства непарнокопытных, одомашненный и единственный сохранившийся подвид дикой лошади, вымершей в дикой природе, за исключением небольшой популяции лошади Пржевальского.</p>
+    <span class="remove-button"></span>
+  </div>
+  <div class="pane">
+    <h3>Осёл</h3>
+    <p>Домашний осёл или ишак — одомашненный подвид дикого осла, сыгравший важную историческую роль в развитии хозяйства и культуры человека. Все одомашненные ослы относятся к африканским ослам.</p>
+    <span class="remove-button"></span>
+  </div>
+  <div class="pane">
+    <h3>Корова, а также пара слов о диком быке, о волах и о тёлках. </h3>
+    <p>Коро́ва — самка домашнего быка, одомашненного подвида дикого быка, парнокопытного жвачного животного семейства полорогих. Самцы вида называются быками, молодняк — телятами, кастрированные самцы — волами. Молодых (до первой стельности) самок называют тёлками.</p>
+    <span class="remove-button"></span>
+  </div>
+</div>
+
+<script>
+  'use strict';
+
+  //tools//
+  function addEvent(obj, event_name, handler) {
+    var handler_wrapper = function(event) {
+      event = event || window.event;
+      if (!event.target && event.srcElement) {
+        event.target = event.srcElement;
+      }
+      return handler.call(obj, event);
+    };
+
+    if (obj.addEventListener) {
+      obj.addEventListener(event_name, handler_wrapper, false);
+    } else if (obj.attachEvent) {
+      obj.attachEvent('on' + event_name, handler_wrapper);
+    }
+    return handler_wrapper;
+  }
+
+  function hasClass(node, classToCheck) {
+    var arrOfClasses = [];
+      
+    if (node.className) {
+      arrOfClasses = node.className.split(' ');
+    };
+      
+    for(var i = 0; i < arrOfClasses.length; i += 1 ) {
+      if(arrOfClasses[i] === classToCheck) {
+        return true;
+      }
+    }
+    return false;
+  };
+
+  var messagesContainer = document.querySelector('#messages-container');
+
+  function deleteMessage(event){
+    var event = event || window.event;
+    var target = event.target || event.srcElement;
+
+    if (!hasClass(target, 'remove-button')) return;
+
+    target.parentNode.parentNode.removeChild(target.parentNode);
+  }
+
+  addEvent(messagesContainer, 'click', deleteMessage);  
+</script>
+</body>
+</html>

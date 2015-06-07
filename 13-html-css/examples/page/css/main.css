@@ -1,0 +1,111 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+@font-face {
+    font-family: 'League Gothic';
+    src: url('leaguegothic-regular-webfont.eot');
+    src: url('leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('leaguegothic-regular-webfont.woff') format('woff'),
+         url('leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('leaguegothic-regular-webfont.svg#league_gothic_italicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*http://hex.colorrrs.com*/
+/*http://www.cssfontstack.com*/
+
+body {
+	height: 500px;
+}
+
+body {
+	background: url(../img/pattern.png);
+	min-width: 990px;
+	color: #8c8c8c;
+}
+
+.main {
+	width: 80%;
+	margin: 0 auto;
+}
+
+
+
+/* Header */
+
+header {
+	margin-top: 40px;
+}
+
+header:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.logo {
+	float: left;
+	text-transform: uppercase;
+}
+
+.name, .logo-text {
+	display: block;
+}
+
+.logo a {
+	text-decoration: none;
+}
+
+.name {
+	color: #db3f4c;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.logo-text {
+	font-family: 'League Gothic', Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+	font-size: 50px;
+	border-bottom: 4px solid #8c8c8c;
+	height: 46px;
+	color: #8c8c8c;
+}
+
+.logo a:hover .logo-text {
+	border-bottom: 0;
+}
+
+
+/*Nav*/
+
+.header-navigation {
+	float: right;
+	font-family: 'League Gothic', Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, 'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+	font-size: 23px;
+	text-transform: uppercase;
+	margin-top: 20px;
+}
+
+.header-navigation a {
+	text-decoration: none;
+}
+
+.header-navigation li {
+	display: inline-block;
+	margin-left: 2px;
+	padding: 0 5px;
+}
+
+.header-navigation a {
+	color: #c0bebf;
+}
+
+.header-navigation .active,
+.header-navigation li:hover {
+	border-bottom: 2px solid #908f8d;
+}
+
+.header-navigation .active a,
+.header-navigation li:hover a {
+	color: #908f8d;
+}

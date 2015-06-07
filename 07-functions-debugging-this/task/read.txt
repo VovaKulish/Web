@@ -1,0 +1,6 @@
+http://learn.javascript.ru/object-methods
+http://learn.javascript.ru/this
+
+
+http://dmitrysoshnikov.com/ecmascript/ru-chapter-7-1-oop-general-theory/
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Inheritance_and_the_prototype_chain
